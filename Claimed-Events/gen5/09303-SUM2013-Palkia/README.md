@@ -4,7 +4,7 @@
 * /u/Rash_Octillery > /u/Lightning00 > /u/tacocat777
 
 ## Proof:
-![Pokecheck](./Pokecheck.jpg)
+![Pokecheck](./Pokecheck.png)
 
 ## Disclaimer:
 * RNG'd (retail)
