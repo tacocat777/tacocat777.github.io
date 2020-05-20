@@ -1,4 +1,4 @@
-# PCNYc Staryu (Naive)
+# PCNYc Staryu
 
 ## Trade History:
 * @dtrainVGC(/u/dantrain1) > @tachoohcat (/u/tacocat777)
