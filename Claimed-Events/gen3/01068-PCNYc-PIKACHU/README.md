@@ -1,4 +1,4 @@
-# PCNYc Pikachu
+# PCNYc Pikachu (Modest)
 
 ## Trade History:
 * @dtrainVGC(/u/dantrain1) > @tachoohcat (/u/tacocat777)
