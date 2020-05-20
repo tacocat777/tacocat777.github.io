@@ -1,4 +1,4 @@
-# PCNY Wish Egg Chansey (Bold)
+# PCNY Wish Egg Chansey
 
 ## Trade History:
 * @dtrainVGC(/u/dantrain1) > @tachoohcat (/u/tacocat777)
