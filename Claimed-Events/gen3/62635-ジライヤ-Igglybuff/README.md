@@ -10,3 +10,6 @@
 ![Summary3](./4.jpg)
 ![Summary4](./5.jpg)
 ![TrainerCard](./6.jpg)
+
+## Disclaimer:
+* RNG'd via retail by @larvesta10
