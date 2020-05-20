@@ -12,4 +12,4 @@
 ![TrainerCard](./6.jpg)
 
 ## Disclaimer:
-* RNG'd via retail by @larvesta10
+* RNG'd retail by @larvesta10
