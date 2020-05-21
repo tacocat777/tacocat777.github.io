@@ -9,3 +9,4 @@
 
 ## Disclaimer:
 * Save Managed (JKSM)
+* RNG'd (PokeCalc NTR)
