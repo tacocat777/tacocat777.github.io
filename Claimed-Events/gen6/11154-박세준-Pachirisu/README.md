@@ -1,7 +1,7 @@
 # NAIC 2015 Pachirisu (Dongdaemun Design Plaza)
 
 ## Trade History:
-* /u/iceposs2000 > /u/ConquestofGaul > /u/tacocat777
+* /u/iceposs2000 > /u/tacocat777
 
 ## Proof:
 ![Attendance](./Attendance.jpg)
