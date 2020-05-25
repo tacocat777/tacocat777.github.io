@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,15 +9,16 @@
 	
 <style>
     html {
-        height: 120%;
+	height: 120%;
         background-color: #FAEBF2 !important;
     }
 
     body {
         margin: 0;
-        font-size: 28px;
+        font-size: 18px;
         height: 100%;
         background-image: linear-gradient(#FFFFFF, #FAEBF2, #FFFFFF);
+        font-family: "Garamond", Garamond, serif;
     }
 
     .header {
@@ -27,6 +27,7 @@
         padding: 30px;
         text-align: center;
         color: #000000;
+        height: 30vw;
     }
 
     h2 {
@@ -186,14 +187,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+.tooltip{}
+.click-to-top span {display: none;}
+.click-to-top:hover span {display: inline-block; position: relative;}
 </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: &quot;tacocat#5865&quot;";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy Discord ID";
+}
+</script>
 </head>
 
 <body>
 <!--------------------HOME-SECTION-------------------------->
     <div class="header">
         <h2 id="Home">/u/tacocat777</h2>
-        <h3>Unclaimed Events</h3>
+        <a href="https://reddit.com/u/tacocat777"><img src="https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/Assets/reddit.png" style="height:10vw;width: 10vw;"></a> 
+        <a href="https://twitter.com/tachoohcat"><img src="https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/Assets/twitter.png" style="height:10vw;width: 10vw;"></a>     
+        <p id="p3" style="display:none;">tacocat#5865</p>
+        <span class="click-to-top">
+        	<img onclick="copyToClipboard('#p3')" onmouseout="outFunc()" src="https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/Assets/discord.png" style="height:10vw;width: 10vw;">
+         	<div class="tooltip">
+            		<span class="tooltiptext" id="myTooltip" style="margin:auto;">Copy Discord ID</span>
+		</div>
+    	</span>    
     </div>
 
 <!----------------------SECTION1---------------------------->
@@ -201,26 +235,26 @@
         <div id="Unclaimed" style="background-color: rgba(251, 218, 229, 0.1); border: 15px double #E7C3CF; border-radius: 0.1em; text-align: center; font-size: 10vw; font-family: Kanit; color: #E7C3CF; -webkit-text-stroke: .3vw black; font-weight: bold; position: relative;text-shadow: -.6vw .6vw white, 0px -.6vw white, 0px .6vw white, -.6vw -.6vw white, .6vw -.6vw white, .6vw .6vw white;">UNCLAIMED</div>
 
         <div class="rectangle" style="background-color: #FBDAE5; background-image: url('https://raw.githubusercontent.com/tacocat777/tacocat777.github.io/master/Assets/geometric-pattern.png');">	
-	    <p2>From Adz919* (JPN OR):</p2>
-             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/chikorita.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Pokemon Lab Chikorita (♀) | ポケモンラボ/12235</li>
-             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/cyndaquil.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Pokemon Lab Cyndaquil (♂) | ポケモンラボ/12235</li>
-             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/totodile.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Pokemon Lab Totodile (♂) | ポケモンラボ/12235</li>
+	    <br><p2>From Adz919* (JPN OR):</p2>
+            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/chikorita.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Pokemon Lab Chikorita (♀) | ポケモンラボ/12235</li>
+            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/cyndaquil.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Pokemon Lab Cyndaquil (♂) | ポケモンラボ/12235</li>
+            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/totodile.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Pokemon Lab Totodile (♂) | ポケモンラボ/12235</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/gengar.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Alva's Gengar | ジャービス/07096</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/gengar.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">PC Hiroshima Gengar (♀) | ハロウィン/09134</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/mewtwo.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Scrap 2016 Mewtwo | Ｐスクラップ/04286</li>
 	    <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/eevee.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">PC Birthday Eevee (♂) | ポケセン♪/10016 (redeemed by FlareBlitz12)</li>
 		
-            <p2>From froakiedokie* (KOR X):</p2>
+        <br><p2>From froakiedokie* (KOR X):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/diancie.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">All-Stars Diancie | 올스타/08136</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/victini.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">SuMo Pre-Order Victini | 새로운모험자/10016</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/arceus.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">M18 Arceus |데세르시티/12235</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/hoopa.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">M18 Hoopa |영화관/12235</li>
-            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/gengar.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">XY&Z Gengar (♂) |XY&Z/10196</li>
+            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/gengar.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">XY&Z Gengar (♂)  |XY&Z/10196</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/tyranitar.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">XY&Z Tyranitar (♀) | XY&Z/10196</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/mawile.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">XY&Z Mawile (♀) | XY&Z/10196</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/gardevoir.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">XY&Z Gardevoir (♀) | XY&Z/09206</li>
 
-            <p2>From V1C1OU5LY* (KOR Sun):</p2>
+        <br><p2>From V1C1OU5LY* (KOR Sun):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/sandshrew-alola.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Alolan Sandshrew | 썬문/170502</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/grimer-alola.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Alolan Grimer | 썬문/170502</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/diglett-alola.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Alolan Diglett | 썬문/170502</li>
@@ -229,44 +263,44 @@
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/silvally.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Aether Silvally | 에테르/171014</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/shaymin.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Heart Shaymin | 마음/180501 (redeemed by tacocat777)</li>	
 		
-            <center><p2>ABOVE: STOCK</p2></center>
+       <br><center><p2>ABOVE: STOCK</p2></center>
             <div class="line"></div>
             <center><p2>BELOW: JKSM'd (Save Managed)</p2></center>
             
-            <p2>From NinjaSpiderMonkey (NA X-- decrypted Powersave):</p2>
+        <br><p2>From NinjaSpiderMonkey (NA X-- decrypted Powersave):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/pumpkaboo-super.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Spooky Pumkaboo | Spooky2014/10014</li>            
 
-            <p2>From Upper90175* (NA OR):</p2>    
+        <br><p2>From Upper90175* (NA OR):</p2>   
 	    <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/bulbasaur.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">WCS16 Bulbasaur | WORLDS16/08196</li>
 	    <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/charmander.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">WCS16 Charmander| WORLDS16/08196</li>
 	    <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/squirtle.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">WCS16 Squirtle| WORLDS16/08196</li>
 
-            <p2>From jeremyps (NA Sun):</p2>
+        <br><p2>From jeremyps (NA Sun):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/krookodile.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">NAIC18 Krookodile | ルイ/070618</li>
 
-            <p2>From patchespatch04* (NA Moon):</p2>
+        <br><p2>From patchespatch04* (NA Moon):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/tapu-koko.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Melemele Tapu Koko | Melemele/170714</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/lycanroc-midnight.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Rocky Lycanroc | Rocky/051517</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/pikachu-original-cap.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Kanto Ash Hat Pikachu | Ash/090898</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/pikachu-hoenn-cap.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Hoenn Ash Hat Pikachu| Ash/091303</li>
 
-            <p2>From expiredjellybean (NA US):</p2>
+        <br><p2>From expiredjellybean (NA US):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/rockruff.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Wifi Rockruff | Balboa/156746</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/rockruff.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Wifi Rockruff | iLiekMudkipz/809979</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/rockruff.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Wifi Rockruff | Pepe/579515</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/rockruff.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Wifi Rockruff | Subaru/654435</li>
             
             
-            <p2>From KookyKracks* (JPN Sun):</p2>
+        <br><p2>From KookyKracks* (JPN Sun):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/charizard.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Corocoro Charizard | コロコロ/565640</li>
 
-            <p2>From XavierOrland* (JPN US/UM):</p2>
+        <br><p2>From XavierOrland* (JPN US/UM):</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/golduck.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">PJCS Golduck | ルイ/180609 (savefiles created by pokeflan/twiodo) </li>
 
-	    <p2>From heliogfonseca (KOR UM):</p2>
+	    <br><p2>From heliogfonseca (KOR UM):</p2>
 	    <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/manaphy.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">Summer Manaphy | 여름/180713</li>
 		
-            <p2>Self Obtained:</p2>
+          <br><p2>Self Obtained:</p2>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/celebi.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">NA/JPN/KOR GS Celebi | Ilex/101500 | ウバメ/112199 | 너도밤나무/042402</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/tapu-lele.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">NA/JPN/KOR PGL Tapu Lele | Akala/113018 | アーカラ/181130 | 아칼라/181130</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/tapu-bulu.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">NA/JPN/KOR PGL Tapu Bulu | Ula'ula (Sun./Moon.)/190222 | ウラウラ/190222 | 울라울라/190222</li>
@@ -289,13 +323,13 @@
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/arceus.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">JPN Corocoro Arceus | コロコロ/180115</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/rotom.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">JPN LINE Rotom | ククイ/171117 (savefiles created by pokeflan)</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/poipole.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Ultra Poipole | 울트라/180331</li>
-            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/kyogre.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;"><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/groudon.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Ultra Kyogre/Groudon | 울트라/180127</li>
+            <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/kyogre.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;"><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/groudon.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Ultra Kyogre/Groudon (universal serial code) | 울트라/180127</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/zygarde.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Pokemon Generations Zygarde | 제너레이션즈/180620</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/zeraora.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Fula City Zeraora | 후우라시티/181219</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/lunala.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;"><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/solgaleo.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Eclipse Lunala/Solgaleo | 이클립스/191115</li>
             <li><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/necrozma.png" style="height:auto;width:auto;margin-left: -24px;margin-right:-12px; margin-top: -16px;margin-bottom: -8px;">KOR Eclipse Shiny Necrozma | 이클립스/191115</li>		
 
-            <p2>*(from /u/Pokemonexchange)</p2>
+        <br><p2>*(from /u/Pokemonexchange)</p2>
         </div>
     </div>	
 </body>
